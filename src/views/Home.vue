@@ -19,7 +19,7 @@
 
     <MyButton
       text='RSVP'
-      link='http://google.fr'></MyButton>
+      link='https://forms.gle/4F6nzCknEHzq7xLA7'></MyButton>
 
     <MyText
       v-bind:text="{
