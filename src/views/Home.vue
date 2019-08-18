@@ -37,7 +37,7 @@
       <MyText
         v-bind:text="{
           line1: 'Please RSVP by January 2020',
-          line2: 'More details to follow.'
+          line2: 'More details to follow'
         }"
         css='pleasersvp'></MyText>
       <MyButton
