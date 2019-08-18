@@ -72,19 +72,6 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
-// @media (min-width: 320px) and (max-width: 1024px) {
-//   // 480px
-//   html {
-//     background: url('../assets/wedding_mobile.jpg') no-repeat center right fixed;
-//     background-size: cover;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//   }
-// }
-
-// @media (min-width: 1025px) and (max-width: 1280px) {
-
   html {
     background: url('../assets/wedding_desktop.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -109,7 +96,8 @@ export default class Home extends Vue {}
 
   .pleasersvp {
     margin-top: 3vh;
-    line-height: 2em;
+    font-size: .9em;
+    line-height: 1em;
   }
 
   .buttonrsvp {
