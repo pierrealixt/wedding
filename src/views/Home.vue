@@ -25,13 +25,12 @@
 
       <MyWeirdText
         text='08 August 2020'
-        css='8august2020'></MyWeirdText>
+        css='august2020'></MyWeirdText>
 
       <MyText
         v-bind:text="{
           line1: 'Cape Town, South Africa'
         }"
-        fontSize="16"
         css='capetown'></MyText>
 
 
@@ -40,7 +39,6 @@
           line1: 'Please RSVP by January 2020',
           line2: 'More details to follow.'
         }"
-        fontSize="12"
         css='pleasersvp'></MyText>
       <MyButton
         text='RSVP'
@@ -106,6 +104,7 @@ export default class Home extends Vue {}
 
   .capetown {
     margin-top: 3vh;
+    font-weight: bold;
   }
 
   .pleasersvp {
@@ -117,26 +116,123 @@ export default class Home extends Vue {}
     margin-top: 4vh;
   }
 
-    @media (min-width: 568px) and (max-width: 812px) {
-    .unefete {
-      margin-top: 3vh;
-      font-weight: bold;
-    }
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-    .capetown {
-      margin-top: 1vh;
-    }
+@media (min-width: 1281px) {
 
-    .pleasersvp {
-      margin-top: 2vh;
-      line-height: 1em;
-    }
+  //CSS
 
-    .buttonrsvp {
-      margin-top: 6vh;
-    }
+}
 
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+  .unefete {
+    margin-top: 6vh;
+    font-weight: bold;
   }
 
+  .august2020 {
+    margin-top: 6vh;
+    p {
+      font-size: 2.5em;
+    }
+  }
+  .capetown {
+    margin-top: 5vh;
+    font-size: .7em;
+  }
+
+  .pleasersvp {
+    margin-top: 2vh;
+    line-height: 1.2em;
+    font-size: .6em;
+  }
+
+  .buttonrsvp {
+    margin-top: 6vh;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+  .unefete {
+    margin-top: 5vh;
+    font-weight: bold;
+  }
+
+  .carinapierrealix {
+    margin-top: 6vh;
+  }
+
+  .august2020 {
+    margin-top: 2vh;
+    p {
+      font-size: 2.5em;
+    }
+  }
+
+  .capetown {
+    margin-top: 3vh;
+    font-size: .7em;
+  }
+
+  .pleasersvp {
+    margin-top: 3vh;
+    line-height: 2em;
+    font-size: .6em;
+  }
+
+  .buttonrsvp {
+    margin-top: 8vh;
+  }
+}
 </style>
