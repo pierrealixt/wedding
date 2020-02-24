@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id='landing'>
     <CairoSun></CairoSun>
 
     <Protea
@@ -72,7 +72,9 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
-  html {
+  #landing {
+    min-width: 100%;
+    min-height: 100%;
     background: url('../assets/wedding_desktop.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -81,7 +83,7 @@ export default class Home extends Vue {}
   }
 
   .unefete {
-    margin-top: 20vh;
+    padding-top: 20vh;
     font-weight: bold;
   }
 
