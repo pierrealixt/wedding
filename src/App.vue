@@ -26,4 +26,14 @@
     }
   }
 }
+
+p {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+  margin: 0;
+}
+
 </style>

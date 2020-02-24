@@ -31,6 +31,7 @@ a {
     line-height: 23px;
     padding: 10px 50px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a:hover {

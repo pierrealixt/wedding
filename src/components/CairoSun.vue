@@ -1,6 +1,9 @@
 <template>
     <div class='cairo-sun'>
-        <img src='../assets/cairosun_25.png' alt='Cairo Sun' />
+        <img 
+          src='../assets/cairosun_25.png' 
+          alt='Cairo Sun'
+          v-on:click='goToHome'/>
     </div>
 </template>
 <script lang="ts">
@@ -8,7 +11,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class CairoSun extends Vue {
-
+  goToHome() {
+    location.href = '#';
+    location.href = '#';
+  }
 }
 </script>
 
